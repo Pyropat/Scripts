@@ -1,9 +1,0 @@
-@echo off
-set source=C:\test
-set file=C:\test\file.txt
-if not exist %source% md %source%
-if not exist %file% @echo "Hello World!" > %file%
-goto spam
-:spam
-robocopy %file% %source%
-goto spam
